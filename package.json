@@ -1,0 +1,17 @@
+{
+  "name": "progressive-img",
+  "version": "1.0.0",
+  "description": "渐进式图片加载插件，适用于原生 JavaScript和Vue.js",
+  "main": "index.js",
+  "author": "onejustone",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "gm": "^1.23.0",
+    "sass-loader": "^6.0.3",
+    "webpack": "^2.3.2"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<h1>progressive image demo</h1>
+<main id="app">
+    <div class="progressive full">
+        <img class="preview lazy" data-src="./assets/1.jpg" src="./assets/r1.jpg" alt="哈哈">
+    </div>
+    <span class="space"></span>
+    <div class="progressive"><img src="./assets/r2.jpg" alt="哈哈" class="preview lazy" data-src="./assets/2.jpg"></div>
+    <span class="space"></span>
+    <div class="progressive"><img src="./assets/r3.jpg" alt="哈哈" class="preview lazy" data-src="./assets/3.jpg"></div>
+    <span class="space"></span>
+    <div class="progressive"><img src="./assets/r7.jpg" alt="" class="preview lazy" data-src="./assets/7.jpg"></div>
+    <span class="space"></span>
+    <div class="progressive"><img src="./assets/r5.jpg" alt="" class="preview lazy" data-src="./assets/5.jpg"></div>
+    <span class="space"></span>
+    <div class="progressive"><img src="./assets/r6.jpg" alt="" class="preview lazy" data-src="./assets/6.jpg"></div>
+    <span class="space"></span>
+    <div class="progressive full"><img src="./assets/r4.jpg" alt="" class="preview lazy" data-srcset="./assets/4.jpg 960w, ./assets/4-m.jpg 1280w, ./assets/4-l.jpg 1920w" data-src="./assets/4.jpg"></div>
+</main>
+</body>
+<script type="text/javascript" src="./progressive.js"></script>
+<script>
+    (function () {
+        new Progressive({
+            el: '#app',
+            lazyClass: 'lazy',
+            removePreview: true
+        }).fire()
+    })()
+</script>
+</html>
